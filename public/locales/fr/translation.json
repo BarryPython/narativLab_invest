@@ -15,5 +15,11 @@
     "info_content_4" : "Status",
     "info_before" : "Lancement dans X Jours",
     "whiteList" : "Whitelist",
-    "witheList_conection" : "Connect Wallet"
+    "witheList_conection" : "Connect Wallet",
+    "witheList_content_1" : "WL Allocation",
+    "witheList_content_2" : "GBC Allocation",
+    "witheList_content_3" : "Investissement max",
+    "witheList_content_4" : "Investissement Actuel",
+    "witheList_content_5" : "NRT Acquis",
+    "buy" : "Acheter $NRT"
 }

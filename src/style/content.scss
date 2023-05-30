@@ -50,7 +50,15 @@
                 }
             }
             
-            
+            &.split{
+                background-color: #DBDBDB;
+                height: 2px;
+                width: 100%;
+
+                &.dark{
+                    background-color: #DBDBDB;
+                }
+            }
 
             .time{
                 color: #FA9E33;
