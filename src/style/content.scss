@@ -1,0 +1,54 @@
+@import "./theme.scss";
+
+.content{
+    margin: 60px 135px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(100vw - (2*135px));
+    column-gap: 40px;
+    row-gap: 30px;
+    align-content: stretch;
+    max-height: 1000px;
+
+    :nth-child(n+4){
+        max-width: calc((100vw * 0.45) - (2* 135px));
+    }
+
+    .info{
+        background-color: #F0F3F3;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px;
+
+        &.dark{
+            background-color: #252525;
+        }
+
+        span{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+
+            .time{
+                color: #FA9E33;
+            }
+        }
+
+        #status-bar{
+            height: 6px;
+            overflow: hidden;
+            width: 100%;
+            background-color: #DBDBDB;
+            border-radius: 30px;
+
+            span{
+                background-color: $l-primary;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "nav_back":"Retour au site",
+    "private_sale" : "Vente Privée",
+    "private_sale_content" : "La vente privée permet aux investisseurs d'investir sur Narativ et de profiter d'une faible valorisation.\nMais cela permet aussi à Narativ de financer ses frais initiaux de lancement et d'améliorer la répartition de sa supply.",
+    "public_sale" : "Vente Publique",
+    "public_sale_content" : "La vente publique est le lancement du jeton pour tout investisseur une fois la vente privée fermée.\nNous prévoyons de lancer le jeton sur tout les DEX puis rarement sur les plus gros CEX grâce à notre réseau.",
+    "raise_utility" : "Utilisation des fonds",
+    "raise_utility_content_1" : "$300,000 : Liquidity for the launch on uniswap",
+    "raise_utility_content_2" : "$100,000 : Costs related to development and Sherlock audits",
+    "raise_utility_content_3" : "$200,000 : Partnerships and marketing",
+    "info" : "Informations",
+    "info_content_1" : "NRT Vente Privée",
+    "info_content_2" : "NRT Vente Publique",
+    "info_content_3" : "Maximum Levée",
+    "info_content_4" : "Status",
+    "info_before" : "Lancement dans X Jours",
+    "whiteList" : "Whitelist",
+    "witheList_conection" : "Connect Wallet"
+}

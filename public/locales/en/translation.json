@@ -1,0 +1,19 @@
+{
+    "nav_back":"Back to website",
+    "private_sale" : "Private Sale",
+    "private_sale_content" : "The private sale allows investors to invest in narativ and benefit from a low valuation. \nBut it also enables Narativ to finance its initial launch costs and improve the distribution of its supply.",
+    "public_sale" : "Public Sale",
+    "public_sale_content" : "The public sale is the launch of the token for any investor once the private sale is closed.\nWe plan to launch the token on all DEX and then rarely on the largest CEX thanks to our network.distribution of its supply.",
+    "raise_utility" : "Raise Utility",
+    "raise_utility_content_1" : "$300,000 : Liquidity for the launch on uniswap",
+    "raise_utility_content_2" : "$100,000 : Costs related to development and Sherlock audits",
+    "raise_utility_content_3" : "$200,000 : Partnerships and marketing",
+    "info" : "Informations",
+    "info_content_1" : "NRT Presale Price",
+    "info_content_2" : "NRT Public Sale",
+    "info_content_3" : "Hard Cap",
+    "info_content_4" : "Status",
+    "info_before" : "Start In X Days",
+    "whiteList" : "Whitelist",
+    "witheList_conection" : "Connect Wallet"
+}
