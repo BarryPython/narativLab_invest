@@ -20,6 +20,8 @@
     "witheList_content_3" : "Max Investment",
     "witheList_content_4" : "Current Investment",
     "witheList_content_5" : "NRT Tokens",
-    "buy" : "Buy $NRT"
-
+    "buy" : "Buy $NRT",
+    "invest" : "Invest",
+    "invest_deposit" : "USDC Deposit",
+    "invest_aquired" : "NRT Acquired"
 }
