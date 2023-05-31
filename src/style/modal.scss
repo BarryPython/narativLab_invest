@@ -105,3 +105,27 @@
        }
     }
 }
+
+:root{
+    &.dark{
+        .modal-container{
+
+            color: white !important;
+
+            section{
+                background-color: #141414 !important;
+
+               form{
+                > :nth-child(1){
+                    span{
+                        background-color: #252525;
+                        input{
+                            color: white !important;
+                        }
+                    }
+                }
+               }
+            }
+        }
+    }
+}

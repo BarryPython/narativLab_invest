@@ -22,11 +22,15 @@ export default function Modal({active, setActive}){
         //TODO bellow make the magic to buy NRT
         console.log(usdcInvest)
     }
+
+    function handleSectionClick(e) {
+        e.stopPropagation();
+    }
     
     return(
         active ?
         <div className="modal-container" onClick={()=>{setActive(false)}}>
-            <section>
+            <section onClick={handleSectionClick}>
                 <div className="header">
                     <h2>{t("invest")}</h2>
                     <button onClick={()=>{setActive(false)}}>

@@ -80,3 +80,14 @@
         }
     }
 }
+
+:root{
+    &.dark{
+            section{
+                background-color: #141414 !important;
+                .info{
+                    background-color: #252525 !important;
+                }
+            }
+        }
+}
