@@ -1,3 +1,5 @@
+@import "./theme.scss";
+
 .modal-container{
     position:fixed;
     height: 100vh;
@@ -91,6 +93,27 @@
                         &::-webkit-inner-spin-button,
                         &::-webkit-outer-spin-button {
                             display: none;
+                        }
+                    }
+
+                    .max{
+                        background-color: transparent;
+                        border: $l-primary 1px solid;
+                        height: fit-content;
+                        width: fit-content;
+                        margin: auto;
+                        border-radius: 8px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 20px;
+                        padding: 2px 18px;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover{
+                            background-color: $l-primary;
+                            color: white;
                         }
                     }
                 }

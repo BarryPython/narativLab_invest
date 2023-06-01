@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 //svg
@@ -10,6 +10,7 @@ import "../style/modal.scss"
 export default function Modal({active, setActive}){
 
     const {t} = useTranslation()
+    const input_usdc = useRef(null)
     const [usdcInvest, setUsdcInvest] = useState(0)
 
     function usdcToNrt(usdc){
@@ -21,6 +22,14 @@ export default function Modal({active, setActive}){
         e.preventDefault() //do not remove this line
         //TODO bellow make the magic to buy NRT
         console.log(usdcInvest)
+    }
+
+    function setMax(){
+        //TODO read from the user wallet and set the max
+        let result = 100 //this is just an example of the result
+        setUsdcInvest(result) // this is just an example of assigning a value to the input
+        //set the value to the input using the ref for keeping consistency
+        input_usdc.current.value = result
     }
 
     function handleSectionClick(e) {
@@ -42,7 +51,10 @@ export default function Modal({active, setActive}){
                         <label>{t("invest_deposit")}</label>
                         <span>
                             <img src={usdc} alt=""/>
-                            <input type="number" placeholder="0" onChange={(e)=>{setUsdcInvest(e.target.value)}}/>
+                            <input type="number" placeholder="0" onChange={(e)=>{setUsdcInvest(e.target.value)}} ref={input_usdc}/>
+                            <button type='button' className='max' onClick={setMax}>
+                                MAX
+                            </button>
                         </span>
                     </div>
                     <div>
