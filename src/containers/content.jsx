@@ -5,37 +5,27 @@ import "../style/content.scss"
 import { ReactComponent as Lock } from "../assets/icons/lock.svg";
 import { ReactComponent as Chart } from "../assets/icons/chart.svg";
 import { ReactComponent as Coin } from "../assets/icons/coin.svg";
+import LogoutBtn from "../components/LogoutBtn";
 import { useEffect, useState } from "react";
 import Modal from "./modal";
 
 // Web3 from here :
-import '@rainbow-me/rainbowkit/styles.css';
-import {
-  darkTheme,
-  getDefaultWallets,
-  RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
-import { configureChains, createClient, WagmiConfig } from 'wagmi';
-import { publicProvider } from 'wagmi/providers/public';
-import { hardhat, goerli } from 'wagmi/chains';
-// ... to here.
+import ConnectBtn from "../components/ConnectBtn";
+import { useAccount } from 'wagmi'
 
 export default function Content(){
 
     const {t} = useTranslation()
     const [percent, setPercent] = useState(10);
-    const [connected, setConnected] = useState(false);
     const [modalAcivate, setmodalAcivate] = useState(false);
+    // eslint-disable-next-line
+    const { address, isConnecting, isDisconnected } = useAccount()
 
     //TODO for the web3 dev theses two states are the current investment and the current NRT holded by the user
+    // eslint-disable-next-line
     const [currentInvestment, setCurrentInvestment] = useState(0);
+    // eslint-disable-next-line
     const [currentNRT, setCurrentNRT] = useState(0);
-
-    //TODO for the web3 dev implement wallet connection here
-    function login(){
-        //this function is fired when connect wallet button is clicked
-        setConnected(true)
-    }
 
     useEffect(()=>{
         const now = new Date();
@@ -87,7 +77,7 @@ export default function Content(){
                     </div>
                 </Section>
                 <Section title={t("WhiteList")}>
-                    {connected ? 
+                    {!isDisconnected ? 
                     <div className="info">
                         <span>
                             <p>{t("witheList_content_1")}</p><p><strong>1</strong></p> 
@@ -110,12 +100,10 @@ export default function Content(){
                         >
                             {t("buy")}
                         </button>
+                        <LogoutBtn />
                     </div> 
                     : 
-                    <button className="main-btn" style={{width : '100%', justifyContent : "center"}}
-                    onClick={()=>{login()}}>
-                        {t("witheList_conection")}
-                    </button>
+                    <ConnectBtn />
                     }
                 </Section>
             </div>

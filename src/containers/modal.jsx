@@ -8,16 +8,6 @@ import usdc from "../assets/icons/usdc.png";
 import "../style/modal.scss"
 
 // Web3 from here :
-import '@rainbow-me/rainbowkit/styles.css';
-import {
-  darkTheme,
-  getDefaultWallets,
-  RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
-import { configureChains, createClient, WagmiConfig } from 'wagmi';
-import { publicProvider } from 'wagmi/providers/public';
-import { hardhat, goerli } from 'wagmi/chains';
-// ... to here.
 
 export default function Modal({active, setActive}){
 
