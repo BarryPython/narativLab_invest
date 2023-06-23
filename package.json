@@ -15,6 +15,7 @@
     "react-intersection-observer": "^9.4.3",
     "react-scripts": "5.0.1",
     "sass": "^1.59.3",
+    "viem": "^1.1.6",
     "wagmi": "^1.2.1"
   },
   "scripts": {
