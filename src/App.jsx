@@ -8,6 +8,7 @@ import NavBar from './containers/navbar';
 
 import "../src/style/global.scss"
 import Content from './containers/content';
+
 function App() {
 
   const [dark, setDark] = useState(true)

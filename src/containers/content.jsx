@@ -8,6 +8,18 @@ import { ReactComponent as Coin } from "../assets/icons/coin.svg";
 import { useEffect, useState } from "react";
 import Modal from "./modal";
 
+// Web3 from here :
+import '@rainbow-me/rainbowkit/styles.css';
+import {
+  darkTheme,
+  getDefaultWallets,
+  RainbowKitProvider,
+} from '@rainbow-me/rainbowkit';
+import { configureChains, createClient, WagmiConfig } from 'wagmi';
+import { publicProvider } from 'wagmi/providers/public';
+import { hardhat, goerli } from 'wagmi/chains';
+// ... to here.
+
 export default function Content(){
 
     const {t} = useTranslation()
